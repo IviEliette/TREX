@@ -2,7 +2,7 @@ var trex, trex_running, trex_collided;
 var ground, invisibleGround, groundImage;
 
 
-
+var cloud, cloudImage;
 
 
 
@@ -13,6 +13,7 @@ function preload(){
   
   groundImage = loadImage("ground2.png");
   
+  cloudImage=loadImage("cloud.png");
  
   
 }
@@ -71,7 +72,8 @@ function draw() {
 
 
 function spawnClouds(){
-
+  cloud=createSprite(600,100,40,10);
+  cloud.addImage(cloudImage);
 }
 
 
